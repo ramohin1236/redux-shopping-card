@@ -36,7 +36,14 @@ const Navbar = () => {
                 {link.name}
               </NavLink>
             ))}
-            <ShoppingCartOutlined className="text-gray-700 hover:text-blue-600 text-xl cursor-pointer" />
+          <div className="relative right-8 ml-6 flex items-center gap-1">
+             <div className="absolute -top-2 -right-2 bg-red-600 text-white rounded-full h-5 w-5 flex items-center justify-center text-xs">
+                 <p>0</p>
+             </div>
+                <div>
+                    <ShoppingCartOutlined className="text-gray-700 hover:text-blue-600 text-2xl cursor-pointer" />
+                </div>
+          </div>
           </div>
 
           {/* Mobile Button */}
