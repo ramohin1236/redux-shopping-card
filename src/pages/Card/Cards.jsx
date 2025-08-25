@@ -6,11 +6,11 @@ const Cards = ({ product }) => (
   <Card
     hoverable
     
-    cover={<img alt="example" src={product.img} />}
+    cover={<img className='h-80 object-cover' alt="example" src={product.img} />}
   >
-    <div className='flex items-center gap-2'>
-       <Meta title={product.name} description="www.instagram.com" />
-       <button className='bg-blue-500 text-white py-1 px-2 rounded'>  Add to Cart</button>
+    <div className='flex justify-between items-center gap-2'>
+       <Meta title={product.name} description={`Price: $${product.price}`} />
+       <button className='bg-blue-500 text-white py-1 px-2 rounded cursor-pointer hover:bg-blue-600'>  Add to Cart</button>
     </div>
   </Card>
 );
