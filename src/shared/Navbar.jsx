@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Cart", path: "/cart" },
-    { name: "Products", path: "/products" }
+
   ];
 
   return (
@@ -44,9 +44,9 @@ const Navbar = () => {
              <div className="absolute -top-2 -right-2 bg-red-600 text-white rounded-full h-5 w-5 flex items-center justify-center text-xs">
                  <p>{cartsItemlength}</p>
              </div>
-                <div>
+                <Link to="/cart">
                     <ShoppingCartOutlined className="text-gray-700 hover:text-blue-600 text-2xl cursor-pointer" />
-                </div>
+                </Link>
           </div>
           </div>
 
