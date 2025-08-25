@@ -7,9 +7,7 @@ const AddProducts = () => {
 
  const {
     register,
-    handleSubmit,
-    watch,
-    formState: { errors },
+    handleSubmit, 
   } = useForm()
 
   const dispatch = useDispatch()
