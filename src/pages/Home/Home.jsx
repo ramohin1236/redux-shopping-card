@@ -11,13 +11,15 @@ const Home = () => {
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="col-span-2 border border-amber-200 ">
-               {
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+                  {
                 products.length ? products.map((product, index)=>(
                    <div key={index}>
                     <Cards product={product}/>
                    </div>
                 )) : <p>no product card</p>
-               }           
+               }  
+                </div>         
            </div>
 
         <div className="border border-red-200">Add new products</div>
