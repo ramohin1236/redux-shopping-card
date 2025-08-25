@@ -6,7 +6,7 @@ function App() {
     <>
       <div>
         <Navbar />
-        <main className="min-h-[calc(100vh-136px)]">
+        <main className="min-h-[calc(100vh-136px)] py-20 container mx-auto sm:px-6 lg:px-8">
           <Outlet />
         </main>
 
