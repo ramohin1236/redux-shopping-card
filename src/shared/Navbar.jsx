@@ -3,9 +3,13 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router";
 import { ShoppingCartOutlined } from "@ant-design/icons";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const cartsItem = useSelector((state)=>state.cart)
+   const cartsItemlength = cartsItem.length;
 
   const navLinks = [
     { name: "Cart", path: "/cart" },
@@ -38,7 +42,7 @@ const Navbar = () => {
             ))}
           <div className="relative right-8 ml-6 flex items-center gap-1">
              <div className="absolute -top-2 -right-2 bg-red-600 text-white rounded-full h-5 w-5 flex items-center justify-center text-xs">
-                 <p>0</p>
+                 <p>{cartsItemlength}</p>
              </div>
                 <div>
                     <ShoppingCartOutlined className="text-gray-700 hover:text-blue-600 text-2xl cursor-pointer" />
