@@ -28,7 +28,7 @@ const CartPage = () => {
         </div>
 
         <div>
-          <p>Billing Information</p>
+          <p>Billing </p>
         </div>
       </div>
     </div>
